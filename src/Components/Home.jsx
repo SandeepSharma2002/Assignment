@@ -18,7 +18,7 @@ export const Home = () => {
                     <p>FN</p>
                     <p>AN</p>
                 </div>
-                <div className='grid grid-cols-4 sm:grid-cols-5 gap-4 flex-1'>
+                <div className='grid grid-cols-3 sm:grid-cols-5 gap-4 flex-1'>
                     <div className='flex flex-col items-center'>
                         <div className='font-semibold'>Monday</div>
                         <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.monday.date}</div>
