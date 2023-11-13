@@ -13,12 +13,12 @@ export const Home = () => {
         <div className='w-3/4 mx-auto pt-8'>
             <div className='uppercase font-medium'>Hello! {data.NAME}</div>
             <div className='uppercase tracking-widest text-center font-medium mb-2'>Attendance</div>
-            <div className='flex gap-4 flex-wrap bg-[#d9d9d9] p-4'>
-                <div className='flex flex-col gap-7 mt-auto mb-3 font-medium'>
+            <div className='flex gap-4 bg-[#d9d9d9] p-4'>
+                <div className='flex flex-col gap-7 mt-14  font-medium'>
                     <p>FN</p>
                     <p>AN</p>
                 </div>
-                <div className='flex justify-between flex-1'>
+                <div className='grid grid-cols-4 sm:grid-cols-5 gap-4 flex-1'>
                     <div className='flex flex-col items-center'>
                         <div className='font-semibold'>Monday</div>
                         <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.monday.date}</div>
