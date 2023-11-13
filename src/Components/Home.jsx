@@ -13,40 +13,42 @@ export const Home = () => {
         <div className='w-3/4 mx-auto pt-8'>
             <div className='uppercase font-medium'>Hello! {data.NAME}</div>
             <div className='uppercase tracking-widest text-center font-medium mb-2'>Attendance</div>
-            <div className='flex justify-start gap-2 flex-wrap sm:justify-between bg-[#d9d9d9] p-4'>
-                <div className='flex flex-col gap-8 mt-auto mb-3 font-medium'>
+            <div className='flex gap-4 flex-wrap bg-[#d9d9d9] p-4'>
+                <div className='flex flex-col gap-7 mt-auto mb-3 font-medium'>
                     <p>FN</p>
                     <p>AN</p>
                 </div>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='font-semibold'>Monday</div>
-                    <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.monday.date}</div>
-                    <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.monday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
-                    <div className={`w-10 h-10 ${data.ATTENDANCE.monday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
-                </div>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='font-semibold'>Tuesday</div>
-                    <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.tuesday.date}</div>
-                    <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.tuesday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
-                    <div className={`w-10 h-10 ${data.ATTENDANCE.tuesday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
-                </div>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='font-semibold'>Wednesday</div>
-                    <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.wednesday.date}</div>
-                    <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.wednesday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
-                    <div className={`w-10 h-10 ${data.ATTENDANCE.wednesday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
-                </div>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='font-semibold'>Thursday</div>
-                    <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.thursday.date}</div>
-                    <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.thursday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
-                    <div className={`w-10 h-10 ${data.ATTENDANCE.thursday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
-                </div>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='font-semibold'>Friday</div>
-                    <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.friday.date}</div>
-                    <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.friday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
-                    <div className={`w-10 h-10 ${data.ATTENDANCE.friday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                <div className='flex justify-between flex-1'>
+                    <div className='flex flex-col items-center'>
+                        <div className='font-semibold'>Monday</div>
+                        <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.monday.date}</div>
+                        <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.monday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                        <div className={`w-10 h-10 ${data.ATTENDANCE.monday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                    </div>
+                    <div className='flex flex-col justify-center items-center'>
+                        <div className='font-semibold'>Tuesday</div>
+                        <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.tuesday.date}</div>
+                        <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.tuesday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                        <div className={`w-10 h-10 ${data.ATTENDANCE.tuesday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                    </div>
+                    <div className='flex flex-col justify-center items-center'>
+                        <div className='font-semibold'>Wednesday</div>
+                        <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.wednesday.date}</div>
+                        <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.wednesday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                        <div className={`w-10 h-10 ${data.ATTENDANCE.wednesday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                    </div>
+                    <div className='flex flex-col justify-center items-center'>
+                        <div className='font-semibold'>Thursday</div>
+                        <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.thursday.date}</div>
+                        <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.thursday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                        <div className={`w-10 h-10 ${data.ATTENDANCE.thursday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                    </div>
+                    <div className='flex flex-col justify-center items-center'>
+                        <div className='font-semibold'>Friday</div>
+                        <div className='pb-2 text-xs font-medium'>{data.ATTENDANCE.friday.date}</div>
+                        <div className={`w-10 h-10 mb-4 ${data.ATTENDANCE.friday.fn == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                        <div className={`w-10 h-10 ${data.ATTENDANCE.friday.an == "absent" ? "bg-[#9f0000]" : "bg-[#09a218]"}`}></div>
+                    </div>
                 </div>
             </div>
 
@@ -64,7 +66,7 @@ export const Home = () => {
                 </div>
 
                 <div className='flex flex-col gap-4 w-full sm:w-3/5 bg-[#d9d9d9] p-4 h-[200px]'>
-                <div className='mx-auto font-medium'>Behavioural Analytics</div>
+                    <div className='mx-auto font-medium'>Behavioural Analytics</div>
                     <PieChart
                         series={[
                             {
